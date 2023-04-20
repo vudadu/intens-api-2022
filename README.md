@@ -1,7 +1,9 @@
 # Intens Api DevOps
+
 Uputstvo za izradu.
 
 ## Koraci
+
 1. Forkovati repozitorijum
 2. Pokrenuti api lokalno koristeci alat po izboru (dodati env variablu PORT i dodeliti vrednost 8080 ili bilo koji drugi dostupan port)
 3. Napisati Dockerfile (5 bodova)
@@ -10,9 +12,14 @@ Uputstvo za izradu.
 6. Na email poslati url vaseg git repoa kao i url otpremljenog apia na cloud provider ili lokalni url.
 
 ### Korisni Linkovi
+
 https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
 ### Potrebni Alati
+
 1. Java 8 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 2. Eclipse / IntelliJ / Alat po izboru
 3. Docker https://www.docker.com/products/docker-desktop
+
+
+Test
