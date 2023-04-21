@@ -48,5 +48,8 @@ jobs:
             SSH_USER: ubuntu
             SSH_KEY: ${{ secrets.SSH_EC2_KEY }} 
       - name: List home directory
-        run: ssh ec2 'ls -la'
+        run: |
+          ssh ec2 'ls -la'
+          sudo systemctl restart javaapi
+          sudo systemctl status javaapi
 
