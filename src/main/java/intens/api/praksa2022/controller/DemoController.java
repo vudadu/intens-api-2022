@@ -9,6 +9,6 @@ public class DemoController {
     @RequestMapping("/")
     public ResponseEntity<String> getRootDemo() {
 
-        return ResponseEntity.ok().body("Intens Praksa 20222222222222222222222!");
+        return ResponseEntity.ok().body("Intens Praksa 2077!");
     }
 }
