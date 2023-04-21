@@ -50,6 +50,6 @@ jobs:
       - name: List home directory
         run: |
           ssh ec2 'ls -la'
-          sudo systemctl restart javaapi
-          sudo systemctl status javaapi
+          ssh ec2 'sudo systemctl restart javaapi'
+          ssh ec2 'sudo systemctl status javaapi'
 
