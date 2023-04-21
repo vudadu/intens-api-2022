@@ -1,0 +1,15 @@
+name: Run test
+
+on: pull_request
+ branches: 
+    - master
+
+jobs:
+  test-maven:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Maven test
+      run: mvn test
+      env:
+        PORT: "8888"
