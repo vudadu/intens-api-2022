@@ -47,7 +47,7 @@ jobs:
             SSH_HOST: "ec2-18-196-1-22.eu-central-1.compute.amazonaws.com"
             SSH_USER: ubuntu
             SSH_KEY: ${{ secrets.SSH_EC2_KEY }} 
-      - name: List home directory
+      - name: Restart service on EC2 and deploy new version of image
         run: |
           ssh ec2 'sudo systemctl restart javaapi'
           ssh ec2 'sudo systemctl status javaapi'
